@@ -1,3 +1,8 @@
+## 描述
+An NPM package/book that can have a typewriter like effect
+
+一个可以如同打字机效果的npm包/hook
+
 ## 效果
 
 ![Untitled.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/47acfb2a976a49788372ee0f73b20afa~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1174&h=530&s=1125414&e=gif&f=113&b=fefefe)
