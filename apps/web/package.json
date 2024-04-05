@@ -1,0 +1,45 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=14.18.0 || >= 16.10.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "skr dev",
+    "dev": "skr dev",
+    "build": "skr build --clean",
+    "analyze": "npm run build -- --analyze --build-target=stable",
+    "lint": "skr lint",
+    "lint-staged": "skr lint --staged --fix --auto-stage",
+    "test": "skr test --target=react"
+  },
+  "dependencies": {
+    "core-js": "^3.36.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@reskript/cli": "6.2.1",
+    "@reskript/cli-build": "6.2.1",
+    "@reskript/cli-dev": "6.2.1",
+    "@reskript/cli-lint": "6.2.1",
+    "@reskript/config-lint": "6.2.1",
+    "@reskript/settings": "6.2.1",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
+    "ui-type-writer": "workspace:*",
+    "eslint": "^8.4.1",
+    "husky": "4.x",
+    "stylelint": "15.x",
+    "typescript": "^5.4.3",
+    "webpack": "^5.91.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  }
+}
